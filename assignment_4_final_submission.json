@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/hashmi2/myrepo/main/df_uofi.json"
+  },
+  "mark": "bar",
+  "width": 400,
+  "height": 220,
+  "encoding": {
+    "y": {"field": "City", "type": "nominal"},
+    "x": {"field": "Square Footage", "type": "quantitative", "aggregate": "sum"}
+  },
+  "config": {}
+}
